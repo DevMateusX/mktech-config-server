@@ -2,4 +2,13 @@ server:
   port: 8888
 spring:
   application:
-    name: mktech-config-server
+    name: mktech-config-server   
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+greeting-service:
+  greeting: "Hello"
+  default-value: "World"
